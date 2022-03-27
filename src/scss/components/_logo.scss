@@ -1,0 +1,10 @@
+.logo {
+  padding-right: 30px;
+  .image{
+    border-radius: 100%;
+  }
+    @include mobile {
+      width: 136px;
+      height: 13px;
+    }
+  }

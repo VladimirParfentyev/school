@@ -1,0 +1,10 @@
+
+import './components/smoth-scroll';
+import './components/tooltip';
+import './components/modals';
+import './components/slider';
+import './components/validation';
+import './components/tabs';
+import './components/custom-scroll';
+import './components/mixitup';
+import './components/inputmask';
