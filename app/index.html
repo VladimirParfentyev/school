@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Code School</title>
+  <link rel="preload" href="fonts/JostRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JostSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/JostBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container-fluid header__container">
+    <a href="#" class="logo">
+      <img loading="lazy" src="img/logo.png" class="image" width="48" height="48" alt="Логотип CodeSchool">
+    </a>
+    <nav class="nav" title="Главное меню" data-menu>
+      <ul class="list-reset nav__list">
+        <li class="nav__item"><a href="#about" class="nav__link" data-menu-item data-scroll>О школе</a></li>
+        <li class="nav__item"><a href="#trainers" class="nav__link" data-menu-item data-scroll>Преподаватели</a></li>
+        <li class="nav__item"><a href="#tariffs" class="nav__link" data-menu-item data-scroll>Стоимость</a></li>
+        <li class="nav__item"><a href="#course" class="nav__link" data-menu-item data-scroll>Курсы</a></li>
+      </ul>
+      <button class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>
+    </nav>
+    <a href="tel:+78000000000" class="phone header__phone">+7 (800-00) 0-00-00</a>
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+    <main class="main">
+
+<section class="hero">
+    <div class="container hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Code School
+          <span class="hero__title-text">
+            Обучим программированию, дизайну, школьным предметам и языкам
+          </span>
+        </h1>
+        <a href="#tariffs" class="hero__link btn btn-reset" data-scroll>Записаться на курс</a>
+      </div>
+      <div class="hero__image">
+        <picture>
+          <img loading="lazy" src="img/hero-image.png" class="image" width="783" height="917" alt="">
+        </picture>
+      </div>
+    </div>
+  </section>
+      <section class="about section-offset" id="about">
+    <div class="container">
+      <h2 class="visually-hidden">О школе Code School</h2>
+      <p class="about__descr">
+        Нам доверяют родители сотен детей по всему миру — от Кейптауна до Санкт-Петербурга.
+      </p>
+      <ul class="list-reset about__list">
+        <li class="about__item">
+          <div class="about__digit">55</div>
+          <p class="about__text">стран по всему миру</p>
+        </li>
+        <li class="about__item">
+          <div class="about__digit">300</div>
+          <p class="about__text">городов</p>
+        </li>
+        <li class="about__item">
+          <div class="about__digit">100</div>
+          <p class="about__text">Педагогов прошедших курсы повышения квалификации</p>
+        </li>
+        <li class="about__item">
+          <div class="about__digit">10 000</div>
+          <p class="about__text">Обученных детей на базе собственных центров</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+      <section class="benefits section-offset">
+    <div class="container">
+      <h2 class="benefits__title section-title">Что дают курсы программирования для детей?</h2>
+      <ul class="list-reset benefits__list">
+        <li class="benefits__item">
+          <h3 class="benefits__subtitle">Время препровождение.</h3>
+          <p class="benefits__descr">
+            Программирование через игру и интересные задания очень затягивает. Оно сможет заменить ребенку бессмысленный серфинг в интернете, геймерство, сформирует правильный круг общения.
+          </p>
+        </li>
+        <li class="benefits__item">
+          <h3 class="benefits__subtitle">Бонусы при поступлении.</h3>
+          <p class="benefits__descr">
+            Ребенок, который учился программированию имеет больше шансов успешно сдать ЕГЭ, заработать баллы на олимпиаде. Многие онлайн школы сотрудничают с ВУЗами, поэтому выпускники имеют больше информации, чтобы успешно пройти вступительную кампанию.
+          </p>
+        </li>
+        <li class="benefits__item">
+          <h3 class="benefits__subtitle">Бонусы при учебе.</h3>
+          <p class="benefits__descr">
+            То, что некоторые студенты будут только начинать изучать, ваш ребенок будет уже уметь применять на практике. Поэтому обучение будет продуктивнее и легче.
+          </p>
+        </li>
+        <li class="benefits__item">
+          <h3 class="benefits__subtitle">
+            Знания
+            <span class="tooltip">
+              <button class="btn-reset tooltip__btn" aria-describedby="id1">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#tooltip-icon"></use>
+                </svg>
+              </button>
+              <span class="tooltip__txt" role="tooltip" id="id1">
+                <span class="visually-hidden">Тултип: </span>
+                Начинать обучение программированию можно уже с 5-6 лет
+              </span>
+            </span>
+          </h3>
+          <p class="benefits__descr">
+            — ребенок изучает языки программирования и узнает, как их применить для решения конкретных задач. Благодаря программированию дети усваивают законы логики, принципы планирования и алгоритмизации. Это поможет и в других учебных дисциплинах.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+      <section class="trainers section-offset container" id="trainers">
+    <h2 class="section-title trainers__title">Профессиональные преподаватели</h2>
+    <div class="trainers__wrapper">
+        <div class="swiper trainers__content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="trainers__item">
+                        <picture>
+                            <source srcset="img/trainer-1.webp" type="image/webp">
+                            <img loading="lazy" src="img/trainer-1.jpg" class="trainers__image" width="360" height="500"
+                                alt="Казаков Илья">
+                        </picture>
+                        <div class="trainers__name">Казаков Илья</div>
+                        <div class="trainers__post">Маэстро курсов Junior</div>
+                        <button class="btn-reset trainers__btn" data-graph-path="trainer-1">Подробнее</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="trainers__item">
+                        <picture>
+                            <source srcset="img/trainer-2.webp" type="image/webp">
+                            <img loading="lazy" src="img/trainer-2.jpg" class="trainers__image" width="360" height="500"
+                                alt="Марина Орлова">
+                        </picture>
+                        <div class="trainers__name">Марина Орлова</div>
+                        <div class="trainers__post">Маэстро курсов Python C++ Junior</div>
+                        <button class="btn-reset trainers__btn" data-graph-path="trainer-2">Подробнее</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="trainers__item">
+                        <picture>
+                            <source srcset="img/trainer-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/trainer-3.jpg" class="trainers__image" width="360" height="500"
+                                alt="Максим Петров">
+                        </picture>
+                        <div class="trainers__name">Максим Петров</div>
+                        <div class="trainers__post">Маэстро курсов WEB-дизайн</div>
+                        <button class="btn-reset trainers__btn" data-graph-path="trainer-3">Подробнее</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="trainers__item">
+                        <picture>
+                            <source srcset="img/trainer-4.webp" type="image/webp">
+                            <img loading="lazy" src="img/trainer-4.jpg" class="trainers__image" width="360" height="500"
+                                alt="Константин Назаров">
+                        </picture>
+                        <div class="trainers__name">Константин Назаров</div>
+                        <div class="trainers__post">Маэстро курсов JAVA</div>
+                        <button class="btn-reset trainers__btn" data-graph-path="trainer-4">Подробнее</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="trainers__item">
+                        <picture>
+                            <source srcset="img/trainer-5.webp" type="image/webp">
+                            <img loading="lazy" src="img/trainer-5.jpg" class="trainers__image" width="360" height="500"
+                                alt="Лиза Весенняя">
+                        </picture>
+                        <div class="trainers__name">Лиза Весенняя</div>
+                        <div class="trainers__post">Маэстро курсов Python</div>
+                        <button class="btn-reset trainers__btn" data-graph-path="trainer-5">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trainers__nav">
+        <div class="swiper-scrollbar trainers__scroll"></div>
+        <div class="trainers__btns">
+            <button class="btn-reset trainers__slider-btn trainers__slider-btn--prev"
+                aria-label="Перейти к предыдущему слайду"></button>
+            <button class="btn-reset trainers__slider-btn trainers__slider-btn--next"
+                aria-label="Перейти к следующему слайду"></button>
+        </div>
+    </div>
+</section>
+
+<section class="tariffs section-offset" id="tariffs">
+    <div class="container">
+      <h2 class="section-title tariffs__title">Стоимость курсов</h2>
+      <ul class="list-reset tariffs__list">
+        <li class="tariffs__item">
+          <h3 class="tariffs__subtitle">Занятие в группах онлайн</h3>
+          <div class="tariffs__price">от 750 ₽/час</div>
+          <p class="tariffs__descr">
+            По будням и выходным
+          </p>
+          <a href="#order" class=" btn tariffs__btn" data-scroll>Оставить заявку</a>
+        </li>
+        <li class="tariffs__item">
+          <h3 class="tariffs__subtitle">Занятие в группах офлайн</h3>
+          <div class="tariffs__price">от 850 ₽/час</div>
+          <p class="tariffs__descr">
+            По выходным дням
+          </p>
+          <a href="#order" class=" btn tariffs__btn" data-scroll>Оставить заявку</a>
+        </li>
+        <li class="tariffs__item tariffs__item--current">
+          <h3 class="tariffs__subtitle">Персональные онлайн занятия на дому</h3>
+          <div class="tariffs__price">от 1050 ₽/час</div>
+          <p class="tariffs__descr">
+            Индивидуальное расписание
+          </p>
+          <a href="#order" class="btn tariffs__btn" data-scroll>Оставить заявку</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+      <section class="course section-offset " id="course">
+    <div class="container">
+        <h2 class="section-title course__title">Выберите нужный курс</h2>
+        <div class="course__age">
+            <button class="btn-reset course__btn" type="button" data-filter="all">Все</button>
+            <button class="btn-reset course__btn" type="button" data-filter=".seven">с 7 лет</button>
+            <button class="btn-reset course__btn" type="button" data-filter=".nine">с 9 лет</button>
+            <button class="btn-reset course__btn" type="button" data-filter=".ten">с 10 лет</button>
+            <button class="btn-reset course__btn" type="button" data-filter=".twelve">с 12 лет</button>
+        </div>
+        <ul class="list-reset course__list containers">
+            <li class="course__item course__item--current mix seven" data-order="1">
+                <img src="img/dlyasamykhmal2_min.png" alt="">
+                <h3 class="course__subtitle">Юный программист</h3>
+                <p class="course__descr">
+                    Развиваем логико-алгометрическое и математическое мышление у детей на базе изучения языков программирования ScratchJr, Scratch и Minecraft.
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix seven" data-order="2">
+                <img src="img/kerbal_min.png" alt="">
+                <h3 class="course__subtitle">Компьютерная грамотность</h3>
+                <p class="course__descr">
+                    Обучение участников курса свободному владению компьютером на уровне уверенного пользователя для использования полученных знаний в своей повседневной жизни.
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix seven" data-order="3">
+                <img src="img/Prevyu-Sketching-415x300-72ppi.png" alt="">
+                <h3 class="course__subtitle">Scratch</h3>
+                <p class="course__descr">
+                    Простой и доступный всем в использовании язык программирования. Ребенок сможет создать свои первые игры и анимации под руководством нашего опытного тренера
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix nine" data-order="4">
+                <img src="img/Prevyu-Tinkercad-415x300-72ppi_min.png" alt="">
+                <h3 class="course__subtitle">Minecraft</h3>
+                <p class="course__descr">
+                    Научим решать задачи по программированию, строить логические цепочки действий, конструировать 3D-миры из кубиков
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix ten" data-order="5">
+                <img src="img/PLASHKA-2.02_min.png" alt="">
+                <h3 class="course__subtitle">Робототехника</h3>
+                <p class="course__descr">
+                    Научим создавать роботов и управлять ими. Прокачаем инженерные навыки, изучим схемотехнику, улучшим знания по физике, математике и программированию.
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix ten" data-order="6">
+                <img src="img/vebdiz12_min.png" alt="">
+                <h3 class="course__subtitle">Web-программирование</h3>
+                <p class="course__descr">
+                    Web-программирование для детей —Познакомим ребенка с основами web-разработки, научим создавать сайты, приложения при помощи HTML разметки, стилей CSS и языка программирования JavaScript.
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix ten" data-order="7">
+                <img src="img/Prevyu-Unity-3D-415x300-72ppi-2.0.png" alt="">
+                <h3 class="course__subtitle">Unity </h3>
+                <p class="course__descr">
+                    Научим ребенка создавать игры разной сложности в Unity и писать чистый грамотный код на языке C#
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix ten" data-order="8">
+                <img src="img/PLASHKAmach_min.png" alt="">
+                <h3 class="course__subtitle">Python </h3>
+                <p class="course__descr">
+                    Научим писать код, разрабатывать программы, создавать игры и сайты, составлять алгоритмы на одном из самых популярных языков программирования.
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix ten" data-order="8">
+                <img src="img/Prevyu-Roblox-Studio-415x300-72ppi.png" alt="">
+                <h3 class="course__subtitle">Python: Pygame</h3>
+                <p class="course__descr">
+                    По окончанию курса учащиеся научатся создавать двумерные игры на языке Python и создадут такие игры как Dino Chrome, Flappy Bird, Doodle Jump и Space Invaders (и ещё несколько — опционально).
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix twelve" data-order="9">
+                <img src="img/ios5_min.png" alt="">
+                <h3 class="course__subtitle">Java</h3>
+                <p class="course__descr">
+                    Одно из самых популярных направлений Java — это Android приложения. Если у вас телефон на Android, то все приложения в нём написаны на Java с использованием других технологий.
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix seven" data-order="10">
+                <img src="img/Prevyu-Robowin-415x300-72ppi.png" alt="">
+                <h3 class="course__subtitle">3D-моделирование</h3>
+                <p class="course__descr">
+                    Ваш ребенок научится создавать модели персонажей, городов, транспорта, игрового окружения, воплотит на экране свои идеи и фантазии.
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+            <li class="course__item course__item--current mix nine" data-order="11">
+                <img src="img/PLASHKA23_min.png" alt="">
+                <h3 class="course__subtitle">Компьютерная графика</h3>
+                <p class="course__descr">
+                    Компьютерная графика в Айтигенио —
+                    Поможем воплотить идеи ребенка в реальность, научим обрабатывать фотографии, составлять коллажи, создавать дизайн сайтов, баннеров, логотипов и других рекламных объектов.
+                </p>
+                <button class="btn-reset btn course__btn" data-graph-path="form-1">Записаться на пробное занятие</button>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="order" id="order">
+    <div class="container order__container">
+      <div class="order__left">
+        <h2 class="order__title">
+          Запишитесь на курс со скидкой 10%
+        </h2>
+        <p class="order__descr">
+          Акция действительна до 10 марта 2022 года
+        </p>
+      </div>
+      <div class="order__right">
+        <form action="#" class="form order__form">
+          <label class="form__label">
+            <input type="text" name="Имя" class="input-reset form__input input-name" placeholder="Имя">
+          </label>
+          <label class="form__label">
+            <input type="tel" name="Телефон" class="input-reset form__input input-tel tel-one" placeholder="Телефон">
+          </label>
+          <label class="form__label">
+            <input type="email" name="E-mail" class="input-reset form__input input-email" placeholder="E-mail">
+          </label>
+          <button class="btn-reset btn btn--dark form__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+    </main>
+
+<footer class="footer">
+  <div class="container-fluid footer__container">
+    <div class="footer__left">
+      <a href="#" class="logo footer__logo">
+        <img loading="lazy" src="img/logo.png" class="image" width="48" height="48" alt="Логотип RoboSchool">
+      </a>
+      <div class="footer__copy">© CODE.SCHOOL</div>
+    </div>
+    <a href="tel:+78000001122" class="phone">+7 (800-00) 0-00-00</a>
+  </div>
+</footer>
+    <div class="graph-modal">
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-1">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+        <div class="popup__image">
+          <picture>
+            <img loading="lazy" src="img/trainer-1.jpg" class="image" width="160" height="222" alt="Казаков Илья">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Казаков Илья</div>
+          <div class="popup__post">Маэстро курсов Junior</div>
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs1" data-tabs="popup_1">
+          <div class="tabs__menu">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Немного о себе</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">Московский государственный университет им. Ломоносова, Физический факультет, Кафедра квантовой статистики и теории поля, аспирантура кафедры теоретической физики.</p>
+                  <p class="popup__text">Регулярно участвую в работе ежегодных конференций ИТО-Москва-Троицк, участник Первого Всероссийского съезда Учителей Информатики в 2011 году и многих других.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">С 1996 по 2012 работал ведущим инженером в Центральном Научно-Исследовательском Институте Российского Космического Агентства, является соавтором большого числа научных работ, Российских и Международных патентов</p>
+                  <p class="popup__text">С 1996 года работал в МБОУ «Лицей № 23» ГО Мытищи — учителем информатики, заместителем директора по Учебно-информационной работе. Соавтор задач школьного этапа Всероссийской олимпиады школьников по информатике</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text"> Я уже 5 лет преподаю детям и обожаю это дело. Имею технический склад ума. В преподавании придерживаюсь принципов гуманизма и считаю педагогику очень интересной и многогранной наукой. Активно изучаю труды великих преподавателей (Януш Корчак, Жан Пиаже, Василий Сухомлинский, Лев Выготский и др), внедряя в образовательные методики их лучшие идеи. Создаю на своих занятиях дружелюбную и лёгкую атмосферу, позволяя раскрыться каждому ученику. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-2">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+        <div class="popup__image">
+          <picture>
+            <img loading="lazy" src="img/trainer-2.jpg" class="image" width="160" height="222" alt="Марина Орлова">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Марина Орлова</div>
+          <div class="popup__post">Маэстро курсов Python C++ Junior</div>
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs2" data-tabs="popup_2">
+          <div class="tabs__menu">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Немного о себе</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">
+                    Московский государственный университет им. Ломоносова, факультет вычислительной математики и кибернетики (ВМК МГУ).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">В Школе программистов работает с 2016 года</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">Я бесконечно верю во всех людей. Я верю, что каждый из вас не боится глубин, летает во сне, светится надеждой в темноте и не имеет краев у океана фантазии. Я с удовольствием протяну вам руку, чтобы стать рядом в ваших творческих планах, робких надеждах, заветных фантазиях и трудах постоянного обучения. Если вам кажется, что никто в вас не верит, то знайте — я верю.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-3">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+        <div class="popup__image">
+          <picture>
+            <img loading="lazy" src="img/trainer-3.jpg" class="image" width="160" height="222" alt="Казаков Илья">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Максим Петров</div>
+          <div class="popup__post">Маэстро курсов WEB-дизайн</div>
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs3" data-tabs="popup_3">
+          <div class="tabs__menu">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Немного о себе</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">
+                    «Российский университет траснпорта (МИИТ)» г. Москва. Инноватика.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">Работает в Школе программистов с сентября 2015 года</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">На данный момент я являюсь студентом 3 курса Московского Государственного Университета Путей Сообщения. Несмотря на то, что специальность, получаемая мной в университете, мало связана с программированием, часть своего свободного времени я уделяю на изучение современных информационных технологий, что бы оставаться «в тренде» :). Программирование — моё хобби, и на занятиях я с удовольствием делюсь своими знаниями с учениками.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-4">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+        <div class="popup__image">
+          <picture>
+            <img loading="lazy" src="img/trainer-4.jpg" class="image" width="160" height="222" alt="ККонстантин Назаров">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Константин Назаров</div>
+          <div class="popup__post">Маэстро курсов JAVr</div>
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs4" data-tabs="popup_4">
+          <div class="tabs__menu">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Образование</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Опыт работы</button></li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Немного о себе</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">Московский авиационный институт (национальный исследовательский университет), Аэрокосмический факультет, Космические системы и ракетостроение (кафедра 601)</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">
+                    С 2012 года проводил занятия по базовой компьютерной подготовке для младших школьников. С 2016 года занимается разработкой курсов по основам компьютерной грамотности.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">Увлекаюсь инструментальной музыкой — как исполнением, так и теорией музыки,
+                    астрономией, космическими исследованиями, цифровой фотографией.
+                    Одной из главных задач преподавательской деятельности считаю воспитание широко образованной
+                    подрастающей смены поколений — как в IT-сфере, так и в образовании в целом.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-5">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content">
+      <div class="popup__top">
+        <div class="popup__image">
+          <picture>
+            <img loading="lazy" src="img/trainer-5.jpg" class="image" width="160" height="222" alt="Лиза Весенняя">
+          </picture>
+        </div>
+        <div class="popup__info">
+          <div class="popup__name">Лиза Весенняя</div>
+          <div class="popup__post">Маэстро курсов Python</div>
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs5" data-tabs="popup_5">
+          <div class="tabs__menu">
+            <ul class="list-reset tabs__nav">
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Образование</button>
+              </li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Опыт работы</button>
+              </li>
+              <li class="tabs__nav-item"><button class="btn-reset tabs__nav-btn" type="button">Немного о себе</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">Мордовский государственный университет им. Н. П. Огарева. Специальность «Инфокоммуникационные технологии и системы связи</p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__panel">
+              <div class="popup__bottom-content" data-simplebar>
+                <div class="popup__content">
+                  <p class="popup__text">«Знать всё на свете нереально, но почему бы не попробовать».
+                    Люблю учиться чему-то новому и делиться знаниями с другими, стараюсь изучать этот мир с разных сторон — будь то сфера IT, музыка или медицина. Питаю слабость к научно-популярной и художественной литературе. Также увлекаюсь настольными играми, теннисом, бегом и другими видами активного времяпровождения.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container popup form-popup" role="dialog" aria-modal="true" data-graph-target="form-1">
+    <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+      <form action="#" class="form-order form">
+        <label class="form-order__label">
+          <input type="text" name="Имя" class="input-reset form-order__input input-name" placeholder="Имя">
+        </label>
+        <label class="form-order__label">
+          <input type="tel" name="Телефон" class="input-reset form-order__input input-tel tel-two" placeholder="Телефон">
+        </label>
+        <label class="form-order__label">
+          <input type="email" name="E-mail" class="input-reset form-order__input input-email" placeholder="E-mail">
+        </label>
+        <button class="btn-reset btn btn--dark form-order__btn">Отправить</button>
+      </form>
+    </div>
+</div>
+
+  </div>
+</body>
+
+</html>
